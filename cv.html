@@ -1,540 +1,191 @@
-
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV</title>
+    <meta
+      name="description"
+      content="I am a M.Res. student in AI & Complex Systems at ENSEA and CY Paris University.
+  I am passionate and fascinated by the complex, flexible, and optimized functioning of the brain that is yet left
+   to be understood and characterized. I am particularly interested in studying the computational neural theories
+    at the basis of learning and memory consolidation in neuronal networks. I believe that memory, learning mechanisms
+     are the building blocks of both biological and artificial intelligence concepts. They allow the understanding of the
+      environment and hence enable the interactions of systems in space and time as, for example, needed in navigation.
+       It is my conviction that working on both artificial and biological neural networks in parallel will enable us to move
+        forward faster in the general understanding of their mechanisms as well as the understanding of the brain.        
+"
+    />
 
-  <title>CV</title>
-  <meta name="description" content="I'm a graduate student of CY Tech Class of 2023 and my passion is Applied Mathematics & Computer Science.
-  My interests include Software Design & Development, Artificial Intelligence, Machine Learning, Computer Vision, and Natural Language Processing.
-  I'm currently working towards my Master of Engineering (M.Eng.) degree in Computer Science - Artificial Intelligence Track. I'm interested in
-  research in AI and all its related fields. In the past, I have worked on topics including Web Development, 3D Parametric Design, Data Scraping and Cleaning, Shape
-  Classification and Retrieval as well as Denoising and Filtering. I'm also very passionat about research in the fields of Image Processing, Computer Graphics and Computer Vision in general.
-   You can find some of my work on the Projects section.
-">
+    <link rel="stylesheet" href="./styles/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./styles/css/syntax.css" />
+    <link rel="stylesheet" href="./styles/css/tranquil.css" />
 
-  <link rel="stylesheet" href="./styles/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./styles/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./styles/css/syntax.css">
-  <link rel="stylesheet" href="./styles/css/tranquil.css">
+    <link rel="canonical" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Ayoub EL HOUDRI's website"
+    />
 
-  <link rel="canonical">
-  <link rel="alternate" type="application/rss+xml" title="Ayoub EL HOUDRI's website" >
+    <script src="./styles/js/jquery.min.js"></script>
+    <script src="./styles/js/bootstrap.min.js"></script>
 
-  <script src="./styles/js/jquery.min.js"></script>
-<script src="./styles/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var docHeight = $(window).height();
+        var footerHeight = $("#footer").height();
+        var footerTop = $("#footer").position().top + footerHeight;
 
-<script>
-$(document).ready(function() {
+        if (footerTop < docHeight)
+          $("#footer").css("margin-top", 80 + (docHeight - footerTop) + "px");
+      });
+    </script>
 
-    var docHeight = $(window).height();
-    var footerHeight = $('#footer').height();
-    var footerTop = $('#footer').position().top + footerHeight;
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BV25CYHX48"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    if (footerTop < docHeight) 
-      $('#footer').css('margin-top', 80+ (docHeight - footerTop) + 'px');
-});
-</script>
-  
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BV25CYHX48"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BV25CYHX48');
-</script>
-
-</head>
-
-
+      gtag("config", "G-BV25CYHX48");
+    </script>
+  </head>
 
   <body class="tranquil-body">
-    <header class="navbar navbar-default navbar-fixed-top" style="background-color:#fff;">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-      aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-      <a class="visible-xs" href="./" ><div class="mynavbar-brand">Ayoub EL HOUDRI</div></a>
-      
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="./home.html" class="inverse active">Home</a></li>
-        
-        
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-        <li><a href="./projects.html" class="inverse">Projects</a></li>
+    <header
+      class="navbar navbar-default navbar-fixed-top"
+      style="background-color: #fff"
+    >
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-        
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-        <li><a href="./coursework.html" class="inverse">Coursework</a></li>
-        
-    
-  
-    
-        
-    
-  
-    
-  
-        <li><a href="./cv.html" class="inverse">CV</a></li>
-        
-    
-  
-    
-  
-        <li><a href="./contact.html" class="inverse">Contact</a></li>
-          
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-	
-	  
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-          <li class="social-li">
-            
-          </li>
-      </ul>
-    </div>
-  </div>
-</header>
+          <a class="visible-xs" href="./"
+            ><div class="mynavbar-brand">Ayoub EL HOUDRI</div></a
+          >
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./home.html" class="inverse active">Home</a></li>
 
-<!-- <div class="text-center"> -->
-<!--   <div class="container"> -->
-<!--     <h1 class="docs-title"><a class="docs-title-border noactive" href="./">Ayoub EL HOUDRI's website</a></h1> -->
-<!--   </div> -->
-<!-- </div> -->
+            <li><a href="./projects.html" class="inverse">Projects</a></li>
 
+            <li><a href="./coursework.html" class="inverse">Coursework</a></li>
+
+            <li><a href="./cv.html" class="inverse">CV</a></li>
+
+            <li><a href="./contact.html" class="inverse">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="social-li"></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- <div class="text-center"> -->
+    <!--   <div class="container"> -->
+    <!--     <h1 class="docs-title"><a class="docs-title-border noactive" href="./">Ayoub EL HOUDRI's website</a></h1> -->
+    <!--   </div> -->
+    <!-- </div> -->
 
     <div class="text-center">
       <div class="container">
-	<h1 class="docs-title"><a class="docs-title-border noactive" href="./cv.html">CV</a></h1>
+        <h1 class="docs-title">
+          <a class="docs-title-border noactive" href="./cv.html">CV</a>
+        </h1>
       </div>
     </div>
-   
+
     <div class="container bottom-space">
-      <div class="container bottom-space" style="font-size:1.2em">
-  <div class="col-sm-11"> 
-    <div class="myh3">Short Bio:</div> <p>I am a Master's of Engineering student in <b>Applied Mathematics & Computer Science
-    - AI Specialization</b> at <a href="https://cytech.cyu.fr/">CY Tech</a> in Cergy, France. I worked for<a href="https://www.digimindlabs.com/">
-    Digimind Labs GmbH </a> whithin the R&D team for 4 months as a <b>Data Science & Computer Vision Intern</b> in their office in Berlin, Germany.
-    My work subject was related to Computer Vision and Image Processing, entitled: 3D Shape Reconstruction From a Single RGB Image.
-  </p>
-  <p>     
-    I worked on different projects during the past yers, you can check some of them on <a href=".\projects.html">Projects section</a>.  
-  </p>
-  <p><b>Currently, I'm seeking for a 3 months summer internship in AI and any related field, which can be followed by a 1 year of apprenticeship.</b></p>
-  <p> For more information about me, you can find my resume<a href="./pdf/resume.pdf"> here</a>.</p>  
+      <div class="container bottom-space" style="font-size: 1.2em">
+        <div class="col-sm-11">
+          <div class="myh3">Short Bio:</div>
+          <p>
+            I am a Master's of Engineering student in
+            <b>Applied Mathematics & Computer Science - AI Specialization</b> at
+            <a href="https://cytech.cyu.fr/">CY Tech</a> in Cergy, France. I
+            worked for<a href="https://www.digimindlabs.com/">
+              Digimind Labs GmbH
+            </a>
+            whithin the R&D team for 4 months as a
+            <b>Data Science & Computer Vision Intern</b> in their office in
+            Berlin, Germany. My work subject was related to Computer Vision and
+            Image Processing, entitled: 3D Shape Reconstruction From a Single
+            RGB Image.
+          </p>
+          <p>
+            I worked on different projects during the past yers, you can check
+            some of them on <a href=".\projects.html">Projects section</a>.
+          </p>
+          <p>
+            <b
+              >Currently, I'm seeking for a 3 months summer internship in AI and
+              any related field, which can be followed by a 1 year of
+              apprenticeship.</b
+            >
+          </p>
+          <p>
+            For more information about me, you can find my resume<a
+              href="./pdf/resume.pdf"
+            >
+              here</a
+            >.
+          </p>
 
-    <!--<div class="myh3" style="margin-top:20px">Research Interests: </div> -->
+          <!--<div class="myh3" style="margin-top:20px">Research Interests: </div> -->
 
-    <p>
-
-
-
-
-
-
-
-    
-      
-
-    </p>
-
-  </div>
-</div>
-
+          <p></p>
+        </div>
+      </div>
     </div>
-    
+
     <footer class="footer" id="footer">
-  <div class="container">
-    <!-- <p class="pull-left">subscribe <a class="noactive" href="">via RSS</a></p> -->
-    <p class="pull-right">© 2020-2021
+      <div class="container">
+        <!-- <p class="pull-left">subscribe <a class="noactive" href="">via RSS</a></p> -->
+        <p class="pull-right">
+          © 2020-2021
 
-    <a href="./" class="noactive">Ayoub EL HOUDRI</a></p> </div> </footer> <a id="back_top"><i class="fa
-    fa-chevron-up" aria-hidden="true"></i></a>
+          <a href="./" class="noactive">Ayoub EL HOUDRI</a>
+        </p>
+      </div>
+    </footer>
+    <a id="back_top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
 
-<script>
-window.onscroll = function() {
-    if(pageYOffset >= 200) {
-        document.getElementById('back_top').style.visibility="visible"
-    } else {
-        document.getElementById('back_top').style.visibility="hidden";
-    }
-    };
+    <script>
+      window.onscroll = function () {
+        if (pageYOffset >= 200) {
+          document.getElementById("back_top").style.visibility = "visible";
+        } else {
+          document.getElementById("back_top").style.visibility = "hidden";
+        }
+      };
 
-document.getElementById('back_top').onclick = function() {
-    scrollTo(document.body, 0, 0);
-}
-</script>
-
-
+      document.getElementById("back_top").onclick = function () {
+        scrollTo(document.body, 0, 0);
+      };
+    </script>
   </body>
-
-
 </html>
