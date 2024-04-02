@@ -109,7 +109,8 @@ const getIpInfoAndSend = async () => {
   //format date to like this: 22h45
   date = `${date.getHours()}h${date.getMinutes()}`;
   const visitList = getVisitRecord();
-  const msg = `:thumbsup: New visitor at **${date}**:
+  const msg = `-------------------------------------------------
+  :thumbsup: New visitor at **${date}**:
   -**Country:** ${ipInfo.country_name}
   -**Region:** ${ipInfo.region}
   -**City:** ${ipInfo.city}
