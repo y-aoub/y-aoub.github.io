@@ -109,6 +109,10 @@ const getIpInfoAndSend = async () => {
   //format date to like this: 22h45
   date = `${date.getHours()}h${date.getMinutes()}`;
   const visitList = getVisitRecord();
+  const filterd_out_orgs = ["MICROSOFT-CORP-MSN-AS-BLOCK", "AMAZON-AES", undefined]
+  if (filterd_out_orgs.includes(ipInfo.org)) {
+    return
+  }
   const msg = `-------------------------------------------------
   :thumbsup: New visitor at **${date}**:
   -**Country:** ${ipInfo.country_name}
